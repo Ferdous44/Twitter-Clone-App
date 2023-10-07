@@ -4,6 +4,7 @@ const TweetSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
+
       required: true,
     },
     description: {
