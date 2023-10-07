@@ -55,13 +55,11 @@ export const getAllTweets = async (req, res, next) => {
     handleError(500, err);
   }
 };
-
 export const getUserTweets = async (req, res, next) => {
   try {
     const userTweets = await Tweet.find({ userId: req.params.id }).sort({
       createAt: -1,
     });
-
     res.status(200).json(userTweets);
   } catch (err) {
     handleError(500, err);
