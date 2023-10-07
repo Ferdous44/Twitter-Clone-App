@@ -16,6 +16,7 @@ const TweetSchema = new mongoose.Schema(
       defaultValue: [],
     },
   },
+
   { timestamps: true }
 );
 
